@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/histy-cli"><img src="https://img.shields.io/npm/v/histy-cli.svg" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/histy-cli"><img src="https://img.shields.io/npm/dm/histy-cli.svg" alt="monthly downloads"></a>
-  <a href="https://github.com/patebryant/histy/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+  <a href="https://github.com/patebry/histy/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg" alt="node version"></a>
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg" alt="platform">
   <img src="https://img.shields.io/badge/coverage-95%25+-brightgreen.svg" alt="coverage">
@@ -18,7 +18,7 @@
 ## Demo
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/patebryant/histy/main/demo.gif" alt="histy demo" width="800">
+  <img src="https://raw.githubusercontent.com/patebry/histy/main/demo.gif" alt="histy demo" width="800">
 </p>
 
 ## Quick Start
@@ -112,7 +112,7 @@ histy reads your shell's history file directly -- `~/.zsh_history` for zsh, `~/.
 ## Contributing
 
 ```sh
-git clone https://github.com/patebryant/histy.git
+git clone https://github.com/patebry/histy.git
 cd histy
 npm install
 ```
