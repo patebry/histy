@@ -1,0 +1,49 @@
+{
+  "name": "histy-cli",
+  "version": "0.1.0",
+  "description": "Interactive TUI for shell history",
+  "type": "module",
+  "bin": {
+    "histy": "./dist/histy.js"
+  },
+  "scripts": {
+    "build": "esbuild bin/histy.tsx --bundle --platform=node --target=node18 --format=esm --jsx=automatic --loader:.ts=ts --loader:.tsx=tsx --outfile=dist/histy.js --banner:js='#!/usr/bin/env node' --external:react --external:ink && chmod +x dist/histy.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patebryant/histy"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "ink": "^4.4.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "@types/react": "^18.2.0",
+    "@vitest/coverage-v8": "^3.0.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "ink-testing-library": "^4.0.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.0.0"
+  }
+}
